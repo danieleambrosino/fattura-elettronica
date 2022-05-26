@@ -105,7 +105,7 @@ class EsempioFattura implements FatturaInterface, IntermediarioInterface
 
 ```php
 
-$fatturaElettronica = new \Deved\FatturaElettronica\FatturaAdapter($esempioFattura);
+$fatturaElettronica = new \DanieleAmbrosino\FatturaElettronica\FatturaAdapter($esempioFattura);
 $nome = $fatturaElettronica->getFileName();
 $xml = $fatturaElettronica->toXml();
 

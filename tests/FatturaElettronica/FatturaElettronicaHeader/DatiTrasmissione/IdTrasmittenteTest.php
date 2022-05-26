@@ -9,9 +9,9 @@
  *
  */
 
-namespace Deved\FatturaElettronica\Tests\FatturaElettronica\FatturaElettronicaHeader\DatiTrasmissione;
+namespace DanieleAmbrosino\FatturaElettronica\Tests\FatturaElettronica\FatturaElettronicaHeader\DatiTrasmissione;
 
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\DatiTrasmissione\IdTrasmittente;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\DatiTrasmissione\IdTrasmittente;
 use PHPUnit\Framework\TestCase;
 
 final class IdTrasmittenteTest extends TestCase
@@ -40,7 +40,7 @@ final class IdTrasmittenteTest extends TestCase
         $writer->openMemory();
         $writer->startDocument('1.0','UTF-8');
         $writer->setIndent(4);
-        $writer = $idTrasmittente->toXmlBlock($writer);
+        $writer = $idTrasmittente->writeXml($writer);
         $this->assertInstanceOf(\XMLWriter::class, $writer);
         return $writer;
     }

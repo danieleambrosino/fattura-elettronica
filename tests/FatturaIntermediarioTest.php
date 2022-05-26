@@ -9,20 +9,20 @@
  *
  */
 
-namespace Deved\FatturaElettronica\Tests;
+namespace DanieleAmbrosino\FatturaElettronica\Tests;
 
-use Deved\FatturaElettronica\Codifiche\ModalitaPagamento;
-use Deved\FatturaElettronica\Codifiche\RegimeFiscale;
-use Deved\FatturaElettronica\Codifiche\TipoDocumento;
-use Deved\FatturaElettronica\FatturaElettronica;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiBeniServizi\DettaglioLinee;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiBeniServizi\Linea;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiGenerali;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiPagamento;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\Common\DatiAnagrafici;
-use Deved\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\Common\Sede;
-use Deved\FatturaElettronica\FatturaElettronicaFactory;
-use Deved\FatturaElettronica\XmlValidator;
+use DanieleAmbrosino\FatturaElettronica\Enums\ModalitaPagamento;
+use DanieleAmbrosino\FatturaElettronica\Enums\RegimeFiscale;
+use DanieleAmbrosino\FatturaElettronica\Enums\TipoDocumento;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiBeniServizi\DettaglioLinee;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiBeniServizi\Linea;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiGenerali;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaBody\DatiPagamento;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\Common\DatiAnagrafici;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronica\FatturaElettronicaHeader\Common\Sede;
+use DanieleAmbrosino\FatturaElettronica\FatturaElettronicaFactory;
+use DanieleAmbrosino\FatturaElettronica\XmlValidator;
 use PHPUnit\Framework\TestCase;
 
 class FatturaIntermediarioTest extends TestCase
@@ -224,7 +224,7 @@ class FatturaIntermediarioTest extends TestCase
      * @param DatiGenerali $datiGenerali
      * @param DatiPagamento $datiPagamento
      * @param DettaglioLinee $dettaglioLinee
-     * @return \Deved\FatturaElettronica\FatturaElettronica
+     * @return \DanieleAmbrosino\FatturaElettronica\FatturaElettronica
      * @throws \Exception
      */
     public function testCreateFattura(

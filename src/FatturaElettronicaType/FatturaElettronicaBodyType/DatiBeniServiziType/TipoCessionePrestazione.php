@@ -10,9 +10,12 @@
  *
  */
 
-if (!function_exists('fe_number_format')) {
-	function fe_number_format($number)
-	{
-		return number_format($number, 2, '.', '');
-	}
+namespace DanieleAmbrosino\FatturaElettronica\FatturaElettronicaType\FatturaElettronicaBodyType\DatiBeniServiziType;
+
+enum TipoCessionePrestazione: string
+{
+	case Abbuono = 'AB';
+	case SpesaAccessoria = 'AC';
+	case Premio = 'PR';
+	case Sconto = 'SC';
 }
